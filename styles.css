@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Arimo&family=Montserrat:wght@300;400;900&family=Outfit:wght@400;700&family=Rubik:wght@300;400;600&family=Ubuntu:wght@300;400&display=swap');
+:root{
+    --bold:700;
+    font-family:'Outfit' , sans-serif;
+    font-weight:400;
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+body{
+    box-sizing:border-box;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    width:100vw;
+    height:100vh;
+    justify-self:center;
+    background:var(--light-gray);
+}
+p{
+    font-size:15px;
+    margin:0;
+    color:var(--grayish-blue);
+    padding:0 1em;
+}
+.qr-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:300px;
+    text-align:center;
+    padding:1em 1em 3em 1em;
+    background:var(--white);
+    border-radius:16px;
+    gap:1.5em;
+    box-shadow: 0px 3px 8px 0px var(--light-gray);
+    -webkit-box-shadow: 0px 3px 8px 0px var(--light-gray);
+    -moz-box-shadow: 0px 3px 8px 0px var(--light-gray);
+}
+.qr-card .image {
+    padding:0;
+    width:100%;
+    aspect-ratio:1;
+    border-radius:10px;
+    overflow:hidden;
+}
+.qr-card .image img{
+    width:100%;
+    height:100%;
+}
+.title{
+    font-weight:var(--bold);
+    color:var(--dark-blue);
+    padding:0 1em;
+    font-size:1.4em;
+}
